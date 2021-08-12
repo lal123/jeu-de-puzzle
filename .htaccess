@@ -1,0 +1,7 @@
+Options -Indexes
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^jeu-de-puzzle\.test$ [OR]
+RewriteCond %{HTTP_HOST} ^m\.jeu-de-puzzle\.test$
+RewriteRule ^(.*)$ http://www.jeu-de-puzzle.test/$1 [R=301,L]
